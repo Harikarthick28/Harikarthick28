@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int inc(int x);
+
+int main()
+{
+    int a;
+    printf("Enter value of a:");
+    scanf("%d", &a);
+    
+    printf("Before increasing: %d", a);
+    a = inc(a);
+    printf("\nAfter increasing: %d", a);
+
+    return 0;
+}
+
+int inc(int x)
+{
+    x = x + 1;
+    printf("\nIncrement is %d", x);
+    return x;
+}
